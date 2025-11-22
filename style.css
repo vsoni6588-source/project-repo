@@ -1,0 +1,298 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to bottom right, #3e4bd4, #8a65db);
+    color: #fff;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* HEADER CARD */
+.header-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-card h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header-card p {
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+/* SUMMARY CARDS */
+.summary-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.summary-card {
+    background: #ffffff;
+    color: #222;
+    width: 30%;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.summary-card h3 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.summary-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* FORM BOX */
+.form-box {
+    background: #ffffff;
+    color: #222;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.form-row input,
+.form-row select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.add-btn {
+    background: #5d3ddc;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.add-btn:hover {
+    background: #472baf;
+}
+/* ADMIN LOGO + NAME */
+.admin-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.admin-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: #ff8a38;
+    padding: 8px;
+}
+
+.admin-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/* EXPENSE LIST */
+.expense-item {
+    background: #ffffff;
+    color: #222;
+    padding: 18px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+}
+
+.expense-left h3 {
+    margin: 0;
+}
+
+.expense-left small {
+    opacity: 0.7;
+}
+
+.tag {
+    background: #e8e1ff;
+    color: #5f37de;
+    padding: 3px 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.amount {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ACTION BUTTONS */
+.action-btns a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.edit-btn {
+    background: #ffb638;
+}
+
+.delete-btn {
+    background: #ff5252;
+}
+
+
+
+/* ADD EXPENSE PAGE STYLING */
+.add-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.glass-card {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+    text-align: center;
+    color: #fff;
+}
+
+.form-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* FORM FIELDS */
+.fancy-form .form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.fancy-form label {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.fancy-form input,
+.fancy-form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: rgba(255,255,255,0.85);
+    color: #333;
+}
+
+/* SAVE BUTTON */
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: #5f3ded;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    background: #472ac8;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    display: inline-block;
+    margin-top: 18px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.back-btn:hover {
+    background: rgba(255,255,255,0.35);
+}
+/* Make header container positionable */
+.header-card {
+    position: relative;
+}
+/* LOGOUT BUTTON INSIDE HEADER */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.logout-btn:hover {
+    background: rgba(255, 255, 255, 0.45);
+    color: #000;
+}
+
